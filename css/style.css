@@ -1,0 +1,218 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header nav {
+  background-color: #1e40af;
+  display: flex;
+  justify-content: right;
+}
+
+header nav a {
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+header div h1 {
+  color: #1e40af;
+}
+
+header div a {
+  padding-right: 2rem;
+  color: #1e40af;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  background-color: #cffafe;
+}
+
+.box > a {
+  background-color: #fff;
+  color: #1e40af;
+  margin: 1rem;
+  padding: 1rem;
+  /* justify-content: space-evenly;
+  align-items: center; */
+}
+
+.content {
+  margin: 1rem;
+}
+
+.today-energy {
+  text-align: center;
+  border: 1px solid #cbd5e1;
+  margin: 2rem;
+}
+
+button {
+  background-color: #1e40af;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.energy-stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.by-the-numbers {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #cffafe;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 20rem;
+  margin-top: 1rem;
+}
+
+footer a {
+  padding: 0.2rem;
+}
+
+/* 1300px medium */
+
+@media screen and (max-width: 1300px) {
+  
+  .container {
+    padding: 0 2rem;
+  }
+
+
+  body {
+    background-color: red;
+  }
+
+  header nav a {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .box > a {
+    flex: 1 1 calc(100% / 3 - 1rem);
+  }
+
+  footer {
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+}
+
+
+
+/* 800px small */
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: green;
+  }
+
+  .flex {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .box > a{
+    width: calc(50% - 0.5rem);
+  }
+
+  .content {
+    display: block;
+  }
+}
+
+
+
+
+
+/* Just for the pie chart */
+
+.pie {
+  --p: 20;
+  --b: 22px;
+  --c: darkred;
+  --w: 150px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+
+/* Just for the bar chart */
+
+.chart div {
+  font: 12px sans-serif;
+  background-color: #750ce8;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
