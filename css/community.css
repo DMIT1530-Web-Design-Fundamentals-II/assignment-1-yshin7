@@ -172,6 +172,7 @@ nav a:hover {
 
   .tile-container {
     display: block;
+    align-items: center;
   }
 
   .box {
