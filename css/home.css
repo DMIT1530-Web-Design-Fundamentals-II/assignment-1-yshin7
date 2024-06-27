@@ -93,17 +93,19 @@ footer h2 {
 
 .top {
   background-color: #f3f4f6;
-  padding: 2rem;
+  margin-top: 2rem;
 }
 
 .top-content {
   display: flex;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 1rem 10rem;
 }
 
 .box {
   background-color: #fff;
+  padding: 2rem 4rem;
 }
 
 .bottom {
@@ -111,7 +113,15 @@ footer h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10rem;
 }
+
+.footer {
+  max-width: 1920px;
+  padding: 0rem;
+}
+
+
 
 footer a {
   padding: 0.2rem;
@@ -138,7 +148,6 @@ nav a:hover {
 section a:hover {
   color: green;
 }
-
 
 
 
@@ -207,6 +216,11 @@ section a:hover {
     padding: 1rem 2rem;
     margin: 1rem;
     width: calc(100% - 1rem);
+  }
+
+  .top {
+    justify-content: center;
+    padding: 1rem 0 0 0;
   }
 
   .footer {

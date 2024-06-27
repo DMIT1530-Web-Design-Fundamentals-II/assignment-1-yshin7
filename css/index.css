@@ -99,6 +99,8 @@ button {
   border: 1px solid #cbd5e1;
   padding: 1rem;
   text-align: center;
+  margin-bottom: 2rem;
+
 }
 
 footer h2 {
@@ -145,7 +147,7 @@ nav a:hover {
 @media (max-width: 1300px) {
   .container {
     max-width: 1300px;
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 
   header nav a {
@@ -176,10 +178,6 @@ nav a:hover {
     padding: 1rem;
   }
 
-  .by-the-numbers {
-    margin: 1rem;
-  }
-
   .content {
     display: block;
     margin: 1rem;
@@ -189,6 +187,10 @@ nav a:hover {
   footer {
     display: block;
     padding: 1rem;
+  }
+
+  .by-the-numbers {
+    margin-top: 2rem;
   }
 
 }
