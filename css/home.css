@@ -158,6 +158,22 @@ section a:hover {
     font-size: 1rem;
     padding: 1.5rem;
   }
+
+  .footer {
+    max-width: 1300;
+    padding: 0rem;
+  }
+
+  .top-content {
+    padding-bottom: 1rem;
+  }
+
+  .top,
+  .bottom {
+    max-width: 1300px;
+    padding: 0 10rem;
+  }
+
 }
 
 @media (max-width: 768px) {
