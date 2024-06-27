@@ -121,6 +121,25 @@ footer a {
   padding: 0.2rem;
 }
 
+a:hover {
+  color: green;
+}
+
+button:hover {
+  background-color: #cffafe;
+  color: #1e40af;
+}
+
+div a:hover {
+  color: green;
+}
+
+nav a:hover {
+  background-color: green;
+  color: #fff;
+}
+
+
 @media (max-width: 1300px) {
   .container {
     max-width: 1300px;
@@ -167,7 +186,7 @@ footer a {
 
   footer {
     display: block;
-    padding: 1rem 10rem;
+    padding: 1rem;
   }
 
 }

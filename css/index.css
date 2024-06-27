@@ -118,21 +118,34 @@ footer a {
   padding: 0.2rem;
 }
 
+footer a:hover {
+  color: green;
+}
 
+button:hover {
+  background-color: #cffafe;
+  color: #1e40af;
+}
+
+section a:hover {
+  background-color: #1e40af;
+  color: #fff;
+}
+
+div a:hover {
+  color: green;
+}
+
+nav a:hover {
+  background-color: green;
+  color: #fff;
+}
 
 
 @media (max-width: 1300px) {
-  body {background-color: red;}
-
-  section a {
-    background-color: yellow;
-    padding: 1rem;
-    width: 1 1 calc(50% - 1rem);
-  }
-
   .container {
     max-width: 1300px;
-    padding: 2rem;
+    padding: 0 10rem;
   }
 
   header nav a {
@@ -140,12 +153,19 @@ footer a {
     padding: 1.5rem;
   }
 
-
+  section a {
+    padding: 1rem;
+    width: calc(100% - 1rem)/2;
+  }
 }
 
 @media (max-width: 768px) {
-  body {background-color: green;}
   
+  section a {
+    padding: 1rem;
+    width: calc(100% - 1rem)/3;
+  }
+
   .top-banner {
     display: block;
     text-align: center;
@@ -153,6 +173,21 @@ footer a {
 
   .container {
     max-width: 800px;
+    padding: 1rem;
+  }
+
+  .by-the-numbers {
+    margin: 1rem;
+  }
+
+  .content {
+    display: block;
+    margin: 1rem;
+    background-color: #fff;
+  }
+
+  footer {
+    display: block;
     padding: 1rem;
   }
 
