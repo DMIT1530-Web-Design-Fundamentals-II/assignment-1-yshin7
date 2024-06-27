@@ -163,6 +163,9 @@ section a:hover {
 @media (max-width: 768px) {
   .tile {
     flex: 1 1 calc(50% - 1rem);
+    
+    /* Here I am trying to reverse the order of the link and image so that link is on top but not working as I hope */
+    flex-direction: row-reverse;
   }
 
   .top-banner {
@@ -184,16 +187,18 @@ section a:hover {
     height: auto;
   }
 
-  .top-content {
-    flex: block;
+  .box {
+    padding: 1rem 2rem;
+    margin: 1rem;
+    width: calc(100% - 1rem);
+  }
+
+  .footer {
+    max-width: 800px;
+    padding: 0rem;
   }
 
   .bottom {
-    padding: 1rem;
-    display: block;
-  }
-
-  footer {
     display: block;
     padding: 1rem;
   }
