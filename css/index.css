@@ -26,46 +26,60 @@ header div a {
   color: #1e40af;
 }
 
+.top-content {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
 header img {
   width: 100%;
   height: auto;
+}
+
+.top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 10rem;
-  display: flex;
-  align-items: center;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.box {
-  background-color: #cffafe;
-}
-
-.box > a {
-  background-color: #fff;
-  color: #1e40af;
-  margin: 1rem;
-  padding: 1rem;
-  /* justify-content: space-evenly;
-  align-items: center; */
+main img {
+  width: 50%;
+  height: auto;
 }
 
 .content {
-  margin: 1rem;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.today-energy {
+h2 {
   text-align: center;
-  border: 1px solid #cbd5e1;
-  margin: 2rem;
+}
+
+.description {
+  padding: 1rem;
+}
+
+a {
+  color: #1e40af;
+}
+
+.top-content {
+  background-color: #cffafe;
+}
+
+section a {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 button {
@@ -76,14 +90,19 @@ button {
 
 .energy-stats {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding: 1rem;
+  text-align: center;
 }
-
 .by-the-numbers {
   background-color: #f1f5f9;
   border: 1px solid #cbd5e1;
   padding: 1rem;
   text-align: center;
+}
+
+footer h2 {
+  background-color: #f3f4f6;
 }
 
 footer {
@@ -92,68 +111,54 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 20rem;
-  margin-top: 1rem;
+  padding: 0 10rem;
 }
 
 footer a {
   padding: 0.2rem;
 }
 
-/* 1300px medium */
 
-@media screen and (max-width: 1300px) {
-  
-  .container {
-    padding: 0 2rem;
+
+
+@media (max-width: 1300px) {
+  body {background-color: red;}
+
+  section a {
+    background-color: yellow;
+    padding: 1rem;
+    width: 1 1 calc(50% - 1rem);
   }
 
-
-  body {
-    background-color: red;
+  .container {
+    max-width: 1300px;
+    padding: 2rem;
   }
 
   header nav a {
     font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  body {background-color: green;}
+  
+  .top-banner {
+    display: block;
     text-align: center;
-    width: 100%;
   }
 
-  .box > a {
-    flex: 1 1 calc(100% / 3 - 1rem);
-  }
-
-  footer {
-    padding: 0 2rem;
-    justify-content: space-between;
-    align-items: baseline;
+  .container {
+    max-width: 800px;
+    padding: 1rem;
   }
 
 }
 
 
-
-/* 800px small */
-
-@media screen and (max-width: 800px) {
-  body {
-    background-color: green;
-  }
-
-  .flex {
-    display: block;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .box > a{
-    width: calc(50% - 0.5rem);
-  }
-
-  .content {
-    display: block;
-  }
-}
 
 
 
